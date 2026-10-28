@@ -24,7 +24,11 @@
       "table",
       "text",
       "title",
-      "video"
+      "video",
+      "cards-article",
+      "carousel-hero",
+      "columns-featured",
+      "hero-boxed"
     ]
   },
   {
@@ -34,15 +38,33 @@
     ]
   },
   {
+    "id": "cards-article",
+    "components": [
+      "cards-article-card"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"
     ]
   },
   {
+    "id": "carousel-hero",
+    "components": [
+      "carousel-hero-item"
+    ]
+  },
+  {
     "id": "carousel",
     "components": [
       "carousel-item"
+    ]
+  },
+  {
+    "id": "columns-featured",
+    "components": [
+      "column"
     ]
   },
   {

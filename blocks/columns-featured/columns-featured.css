@@ -1,0 +1,40 @@
+/* columns-featured: structural layout only; brand styling comes in the design pass */
+.columns-featured > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-featured img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.columns-featured > div > .columns-featured-img-col {
+  line-height: 0;
+}
+
+.columns-featured > div > .columns-featured-text-col {
+  padding: 24px;
+  background-color: var(--light-color);
+}
+
+@media (width >= 900px) {
+  .columns-featured > div {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .columns-featured > div > .columns-featured-img-col {
+    flex: 0 0 62.5%;
+  }
+
+  .columns-featured > div > .columns-featured-text-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+  }
+}

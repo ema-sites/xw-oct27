@@ -1,0 +1,49 @@
+/* hero-boxed: structural layout only; brand styling comes in the design pass */
+.hero-boxed-container .hero-boxed-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-boxed {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.hero-boxed > .hero-boxed-image {
+  line-height: 0;
+}
+
+.hero-boxed > .hero-boxed-image picture,
+.hero-boxed > .hero-boxed-image img {
+  display: block;
+  width: 100%;
+}
+
+.hero-boxed > .hero-boxed-image img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.hero-boxed > .hero-boxed-content {
+  position: relative;
+  z-index: 1;
+  margin: -48px 16px 0;
+  padding: 16px;
+  background-color: var(--background-color);
+}
+
+.hero-boxed > .hero-boxed-empty {
+  display: none;
+}
+
+@media (width >= 900px) {
+  .hero-boxed > .hero-boxed-image img {
+    aspect-ratio: 16 / 7;
+  }
+
+  .hero-boxed > .hero-boxed-content {
+    margin: -96px 32px 0;
+    padding: 24px 32px;
+  }
+}

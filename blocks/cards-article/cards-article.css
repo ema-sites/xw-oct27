@@ -1,0 +1,45 @@
+/* cards-article: structural layout only; brand styling comes in the design pass */
+.cards-article > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.cards-article > ul > li {
+  min-width: 0;
+}
+
+.cards-article .cards-article-card-image {
+  line-height: 0;
+}
+
+.cards-article .cards-article-card-image img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.cards-article .cards-article-card-body {
+  margin: 12px 0 0;
+}
+
+.cards-article .cards-article-card-body > :first-child {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+/* description is truncated to a single line */
+.cards-article .cards-article-card-body > p:last-child:not(:first-child) {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media (width >= 900px) {
+  .cards-article > ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

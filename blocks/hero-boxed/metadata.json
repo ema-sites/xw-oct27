@@ -1,0 +1,25 @@
+{
+  "variantName": "hero-boxed",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "full-bleed photo with an overlapping white content box and CTA",
+    "description": "Heading 'Next Adventures' with yellow underline, then a full-bleed photo with an overlapping white content box (h2, description, yellow 'See Trip' CTA), same look as carousel slides."
+  },
+  "contentPattern": {
+    "source": "library /block-collection/hero",
+    "rows": [
+      "row 1: image",
+      "row 2: h2, description, CTA link"
+    ],
+    "cells": "single cell per row",
+    "structure": "row 1 image; row 2 heading, description and CTA link"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "hero-boxed"
+  ],
+  "usage": "Static promotional teaser for a single trip or story.",
+  "reuseGuidance": "Use for a single non-rotating image + boxed text teaser; matches the carousel-hero slide look. Use carousel-hero for multiple rotating slides.",
+  "sourceUrl": "https://wknd.site/us/en.html"
+}

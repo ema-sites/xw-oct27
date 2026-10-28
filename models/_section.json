@@ -59,7 +59,11 @@
         "table",
         "text",
         "title",
-        "video"
+        "video",
+        "cards-article",
+        "carousel-hero",
+        "columns-featured",
+        "hero-boxed"
       ]
     }
   ]

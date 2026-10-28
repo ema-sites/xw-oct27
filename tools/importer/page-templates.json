@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "projectType": "xwalk"
+  },
+  "templates": [
+    {
+      "name": "home",
+      "urls": [
+        "https://wknd.site/us/en.html"
+      ],
+      "representativeUrl": "https://wknd.site/us/en.html",
+      "description": "WKND home page: hero carousel, featured article, recent articles cards, next adventure teaser, and adventure cards",
+      "urlPattern": "/us/*",
+      "blocks": [
+        {
+          "name": "carousel-hero",
+          "instances": [
+            ".carousel.cmp-carousel--hero"
+          ]
+        },
+        {
+          "name": "columns-featured",
+          "instances": [
+            ".teaser.cmp-teaser--featured"
+          ]
+        },
+        {
+          "name": "cards-article",
+          "instances": [
+            ".image-list.list"
+          ]
+        },
+        {
+          "name": "hero-boxed",
+          "instances": [
+            ".teaser.cmp-teaser--hero.cmp-teaser--imagebottom"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero carousel",
+          "selector": [
+            ".carousel.cmp-carousel--hero"
+          ],
+          "style": null,
+          "blocks": [
+            "carousel-hero"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Featured article",
+          "selector": [
+            ".teaser.cmp-teaser--featured"
+          ],
+          "style": null,
+          "blocks": [
+            "columns-featured"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Recent Articles",
+          "selector": [
+            ".cmp-layout-container--fixed:nth-of-type(1) .aem-Grid > .title.cmp-title--underline:nth-of-type(2)"
+          ],
+          "style": null,
+          "blocks": [
+            "cards-article"
+          ],
+          "defaultContent": [
+            ".cmp-layout-container--fixed:nth-of-type(1) .aem-Grid > .title.cmp-title--underline:nth-of-type(2)",
+            ".cmp-layout-container--fixed:nth-of-type(1) .aem-Grid > .button.cmp-button--primary"
+          ]
+        },
+        {
+          "id": "section-4",
+          "name": "Next Adventures",
+          "selector": [
+            ".cmp-layout-container--fixed:nth-of-type(1) .aem-Grid > .title.cmp-title--underline:nth-of-type(6)"
+          ],
+          "style": null,
+          "blocks": [
+            "hero-boxed"
+          ],
+          "defaultContent": [
+            ".cmp-layout-container--fixed:nth-of-type(1) .aem-Grid > .title.cmp-title--underline:nth-of-type(6)"
+          ]
+        },
+        {
+          "id": "section-5",
+          "name": "Where do you want to go",
+          "selector": [
+            ".cmp-layout-container--fixed:nth-of-type(2) .aem-Grid > .title:not(.cmp-title--underline)"
+          ],
+          "style": null,
+          "blocks": [
+            "cards-article"
+          ],
+          "defaultContent": [
+            ".cmp-layout-container--fixed:nth-of-type(2) .aem-Grid > .title:not(.cmp-title--underline)",
+            ".cmp-layout-container--fixed:nth-of-type(2) .aem-Grid > .button.cmp-button--primary"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "variantName": "columns-featured",
+  "baseBlock": "columns",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "featured article teaser with a large image beside a tinted text panel",
+    "description": "Fixed-width two-column layout: large image left (~60%), light-grey (#ebebeb) text panel right with eyebrow 'Featured Article', h2, paragraph, yellow CTA. Grey belongs to the block's text cell, section itself is white."
+  },
+  "contentPattern": {
+    "source": "library /block-collection/columns",
+    "rows": "one row",
+    "cells": [
+      "image",
+      "eyebrow paragraph, h2, description, CTA link"
+    ],
+    "structure": "one row, two cells: cell 1 image; cell 2 eyebrow paragraph, heading, description, CTA link"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "columns-featured"
+  ],
+  "usage": "Single featured-content teaser (article, story) shown side by side with its image.",
+  "reuseGuidance": "Use when one item is promoted with image left and text panel right. For grids of items use cards-article.",
+  "sourceUrl": "https://wknd.site/us/en.html"
+}

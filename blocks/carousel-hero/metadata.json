@@ -1,0 +1,25 @@
+{
+  "variantName": "carousel-hero",
+  "baseBlock": "carousel",
+  "canonicalModel": "collection",
+  "visualCharacteristics": {
+    "purpose": "rotating full-width promotional slides, each a photo with an overlapping content box",
+    "description": "Full-width 3-slide carousel; each slide is a photo with a white content box overlapping its bottom-left (h2, description, yellow CTA); dot indicators and prev/next arrows."
+  },
+  "contentPattern": {
+    "source": "library /block-collection/carousel",
+    "rows": "one row per slide",
+    "cells": [
+      "image (media_image, media_imageAlt)",
+      "text (content_text): heading, description, CTA link"
+    ],
+    "structure": "cell 1 image; cell 2 heading, description and CTA link"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "carousel-hero"
+  ],
+  "usage": "Top-of-page hero carousel with two or more promotional slides.",
+  "reuseGuidance": "Use for any rotating hero with image + boxed text/CTA per slide. For a single static slide use hero-boxed.",
+  "sourceUrl": "https://wknd.site/us/en.html"
+}

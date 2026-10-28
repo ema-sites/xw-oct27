@@ -1,0 +1,25 @@
+{
+  "variantName": "cards-article",
+  "baseBlock": "cards",
+  "canonicalModel": "collection",
+  "visualCharacteristics": {
+    "purpose": "grid of article or adventure teasers linking to detail pages",
+    "description": "Heading with short yellow underline; 4 article cards (image, uppercase title, one-line truncated grey description); yellow 'All Articles' button; ends with hr separator. | h3 'Where do you want to go?'; 4 adventure cards (image, uppercase title, truncated description) same look as Recent Articles; yellow 'All Trips' button; ends with hr separator."
+  },
+  "contentPattern": {
+    "source": "library /block-collection/cards",
+    "rows": "one row per card",
+    "cells": [
+      "image (image, imageAlt)",
+      "text: linked title, description"
+    ],
+    "structure": "cell 1 image; cell 2 linked title and a short description"
+  },
+  "options": [],
+  "memberVariantIds": [
+    "cards-article"
+  ],
+  "usage": "Lists of recent articles, adventures or similar linked teasers (typically 4 per row).",
+  "reuseGuidance": "Use for any image + linked title + one-line description list. Section heading and \"All ...\" button stay as default content around the block.",
+  "sourceUrl": "https://wknd.site/us/en.html"
+}
