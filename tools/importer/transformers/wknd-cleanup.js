@@ -32,6 +32,18 @@ export default function transform(hookName, element, payload) {
       '.cmp-carousel__actions',
       '.cmp-carousel__indicators',
     ]);
+
+    // Point images at their original DAM asset instead of the Core Components
+    // rendition URL (/…/_jcr_content/….coreimg.…). Rendition paths contain
+    // _jcr_content, which AEM cannot store as a DAM asset path on upload.
+    element.querySelectorAll('img').forEach((img) => {
+      const ref = img.closest('[data-cmp-filereference]');
+      const damPath = ref && ref.getAttribute('data-cmp-filereference');
+      if (!damPath || !damPath.startsWith('/content/dam/')) return;
+      img.setAttribute('src', damPath);
+      img.removeAttribute('srcset');
+      img.removeAttribute('sizes');
+    });
   }
 
   if (hookName === 'afterTransform') {
